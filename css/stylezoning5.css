@@ -91,3 +91,31 @@ figcaption{
 #block{
 margin-left: 20%
 }
+.image figure img:hover,.image figure img:focus{
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform:scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.image figure img:hover,.image figure img:focus figcaption{
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform:scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.image figure img{
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition:  all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -moz-transform: scale(1);
+    -webkit-transform:scale(1);
+    -o-transform:scale(1);
+}
