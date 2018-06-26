@@ -50,34 +50,37 @@ table {
 /* FIN DU RESET D ERIC MEYER ------------------------------------------- */
 
 /* div principale */
-.main{
+#main{
     background: pink;/* couleur de fonds */
 }
 /* la navbar */
 .nav{
     position: fixed;/* pour que l'élement soit fixé par rapport à l'écran */
-    height: 8%;/* hauteur */
+    height: 6%;/* hauteur */
     width: 100%;/* largeur */
     background: lightblue;/* couleur de fonds */
     top: 0;/* à 0 px en partant du haut */
     left: 0;/* à 0 px en partant du bas */
     z-index: 2; /* définit a quelle plan la div appartient (2) */
+    opacity: 0.7;
 }
 /* la div qui contient la div contenue  */
 .container{
-    margin-top: 8%;/* la marge du haut */
     background: #20ae96;/* couleur de fonds */
     width: 80%;/* la largeur */
-    margin: 4% auto;/* une margin à 4% par rapport à l'écran */
+    margin: 2.9% auto;/* une margin à 4% par rapport à l'écran */
 }
 /* le foooter */
 .footer{
     position: fixed; /* position fixed = position par fixé par rapport à l'écran */
-    height: 8%; /* hauteur */
+    height: 6.7%; /* hauteur */
     width: 100%; /* laugeur */
     background: lightblue; /* couleur de fonds */
     bottom: 0; /* se situe à 0px à partir du bas */
     left: 0; /* se situe à 0px à partir de la gauche */
+    text-align: center;/* pour centrer le texte dans le footer */
+    opacity: 0.7;
+    font-size: 2em;
 }
 /* la div qui contient les zones */
 .contenue{
@@ -114,6 +117,7 @@ table {
 h2{
     text-align: center;/* pour centrer le text */
     font-size: 1.7em;/* la taille du text */
+    font-family: 'Anton', sans-serif;/* police de charactère pour les h2 */
 }
 /* le texte dans la zone rouge */
 .p_de_zone_rouge{
@@ -134,6 +138,7 @@ h2{
 /* tous les h3 (ils sont dans les zones orange,violette,rouge */
 h3{
     font-size: 1.5em;/* la taille de la police */
+    font-family: 'Anton', sans-serif;/* police de charactère pour les h3 */
 }
 /* la classe qui contient le logo de philharmonie */
 .logomatrix{

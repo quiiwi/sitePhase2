@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/stylezoning8.css"><!-- lien du css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"><!-- lien du font awesome -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> <!-- lien de google font -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Condensed" rel="stylesheet">  <!-- lien de google font -->
     <script src="js/script8.js"></script><!-- lien du script -->
     <title>Document</title>
 </head>
-<body>
-    <div class="main"><!-- debut div main -->
+<body id="colorofbody">
+    <div id="main"><!-- debut div main -->
         <nav class="nav"><!-- debut nav -->
 
             <div class="logo"> <!-- debut div logo -->
@@ -31,7 +31,6 @@
                     <i class="fas fa-circle" ></i> <!-- le font awesome -->
                 </div><!-- fin du div du font awesome -->
             </div>
-
 
         </nav><!-- fin nav -->
         
@@ -59,12 +58,48 @@
                     </div> <!-- fin du div logo -->
 
 
-                    <!-- je suis caché -->
-                   <!--  <script>
+                 
+                    <script>
                     function myFunctionColor(){
-                        document.getElementById("connexion").style.color = "blue";
+                        A = prompt("choisissez une couleur");
+                            switch (A){
+                            case "rouge":
+                            main.style.backgroundColor = "red";
+                            break;
+
+                            case "orange":
+                            main.style.backgroundColor = "orangered";
+                            break;
+
+                            case "bleu":
+                            main.style.backgroundColor = "blue";
+                            break;
+
+                            case "jaune":
+                            main.style.backgroundColor = "yellow";
+                            break;
+
+                            case "noir":
+                            main.style.backgroundColor = "black";
+                            break;
+
+                            case "blanc":
+                            main.style.backgroundColor = "white";
+                            break;
+
+                            case "violet":
+                            main.style.backgroundColor = "purple";
+                            break;
+
+                            case "vert":
+                            main.style.backgroundColor = "green";
+                            break;
+
+                            default:
+                            alert("les couleurs disponibles sont: rouge, bleu, jaune, noir, blanc, violet, vert, orange.")
                         }
-                    </script> -->
+                    }
+                    </script>
                     
 
 
@@ -72,8 +107,8 @@
                         <form action="js/script8.js" id="donnees" name="formulaire" method="POST"> <!-- formulaire -->
                     
                             <label for="pseudo">Pseudo:</label><!-- label du pseudo (text affiché)-->
-                            <input type="text" id="pseudo" name="user_name" required> <br><!-- input du pseudo -->
-                        
+                            <input type="text" id="pseudo" name="user_name" required value="yolo"> <br><!-- input du pseudo -->
+                            
                             <label for="password">Mot de Passe:</label><!-- label du mot de passe (text affiché)-->
                             <input type="password" id="password" name="user_password" required> <br><!-- input du mot de passe -->
                         
@@ -93,8 +128,8 @@
                             <input type="button" onclick="myFunctionAfficher()" value="Afficher"><!-- input qui va lancer la fontion "myFunctionAfficher()" -->
                 
                             <input type="button" onclick="myFunctionConnexion()" value="Connexion"><!-- input qui va lancer la fonction "myFunctionConnexion()" -->
-
-                            <!-- <input type="button" onclick="myFunctionColor()" value"Changer la couleur"> -->
+                            <br>
+                            <input type="button" onclick="myFunctionColor()" value="Couleur"><!-- pour changer la couleur de la page -->
                 
                         </form><!-- fin du formulaire -->
                     </div><!-- fin du div formulaire -->
@@ -138,7 +173,7 @@
         </div><!-- fin du div container -->
 
         <footer class="footer"> <!-- début footer -->
-            <p>Juin 2016</p><!-- un paragraphe -->
+            <p>26 Juin 2018</p><!-- un paragraphe -->
         </footer><!-- fin footer -->
     </div><!-- fin du div main -->
 </body>
