@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/stylezoning8.css"><!-- lien du css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"><!-- lien du font awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> <!-- lien de google font -->
+    <script src="js/script8.js"></script><!-- lien du script -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="main"><!-- debut div main -->
+        <nav class="nav"><!-- debut nav -->
+
+            <div class="logo"> <!-- debut div logo -->
+                <a href="#">bienvenue</a><!-- un lien -->
+            </div><!-- fin div logo -->
+
+            <div class="nav_bar"><!-- debut div nav_bar -->
+                <a href="#">Zone orange</a><!-- un lien -->
+                <a href="#">Zone violette</a><!-- un lien -->
+                <a href="#">Zone rouge</a><!-- un lien -->
+            </div><!-- fin div navbar -->
+
+            <div id="main1"><!-- début du div information sur l'utilisateur -->
+                <p id="origine"> Déconnecté</p> <!-- un paragraphe qui peut être modifier avec le JS -->
+                <p id="god">Moins que rien</p><!-- un paragraphe qui peut être modifier avec le JS -->
+                <div id="connexion"> <!-- une div pour la couleur d'un font awesome -->
+                    <i class="fas fa-circle" ></i> <!-- le font awesome -->
+                </div><!-- fin du div du font awesome -->
+            </div>
+
+
+        </nav><!-- fin nav -->
+        
+        <div class="container"> <!-- div container -->
+            <h2>010100110100111101010011</h2><!-- un titre de niveau 2 -->
+
+            <div class="contenue"> <!-- div qui contient les zones -->
+
+                <div class="zone_orange"> <!-- div zone orange -->
+                    <h3>Titre de la zone orange</h3><!-- un titre de niveau 3 -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit perferendis odit beatae culpa quae, rem distinctio atque vel, reiciendis voluptatibus ullam laudantium nam eos, inventore deleniti quo asperiores expedita aliquid explicabo? Vel, quod! Quae labore debitis amet porro est laborum pariatur minus, aut, aliquam, veritatis dolorem! Cumque, expedita tenetur.</p> <!-- un paragraphe -->
+                    <br><!-- pour sauter une ligne -->
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, nesciunt porro maxime ratione suscipit recusandae praesentium maiores excepturi saepe sed tempore minima facere. Eius facere deserunt dolorem distinctio ad? Itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae sequi quasi voluptas vero nemo earum molestias, neque quod ipsa atque! Officiis laudantium quibusdam deleniti nihil voluptates qui veritatis asperiores?</p>
+                    <!-- un autre paragraphe -->
+                </div> <!-- fin de div zone orange -->
+
+                <div class="zone_violette"> <!-- div zone violette -->
+                    <h3>Titre de la zone violette</h3><!-- un titre de niveau 3 -->
+
+                    <div class="logomatrix"> <!-- div du logo  -->
+                        <figure><!-- une figure qui contient une image et sa légende -->
+                            <img src="img/philharmonie01.png" alt="philharmonie logo"><!-- une image -->
+                            <figcaption>La Philharmonie de Paris</figcaption><!-- la légende de l'image -->
+                        </figure><!-- fin de la figure -->
+                    </div> <!-- fin du div logo -->
+
+
+                    <!-- je suis caché -->
+                   <!--  <script>
+                    function myFunctionColor(){
+                        document.getElementById("connexion").style.color = "blue";
+                        }
+                    </script> -->
+                    
+
+
+                    <div class="formulaire"> <!-- div du formulaire -->
+                        <form action="js/script8.js" id="donnees" name="formulaire" method="POST"> <!-- formulaire -->
+                    
+                            <label for="pseudo">Pseudo:</label><!-- label du pseudo (text affiché)-->
+                            <input type="text" id="pseudo" name="user_name" required> <br><!-- input du pseudo -->
+                        
+                            <label for="password">Mot de Passe:</label><!-- label du mot de passe (text affiché)-->
+                            <input type="password" id="password" name="user_password" required> <br><!-- input du mot de passe -->
+                        
+                            <label for="mail">Boîte Mail:</label><!-- label du mail(text affiché) -->
+                            <input type="email" id="email" name="user_mail"> <br><!-- input de l'email -->
+                
+                            <label for="sexe">Homme</label><!-- label radio homme/femme -->
+                            <input type="radio" name="sexe" id="masculin" class="sexe" ><!-- input radio homme/femme -->
+                
+                            <label for="sexe">Femme</label><!-- label radio homme/femme -->
+                            <input type="radio" name="sexe" id="feminin" class="sexe" checked> <br><!-- input radio homme/femme -->
+                        
+                            <input type="button" onclick="myFunction()" value="Envoyer"> <!-- input qui va lancer la fonction "myFunction()" -->
+                    
+                            <input type="button" onclick="myFunctionReset()" value="Annuler"> <!-- input qui va lancer la fontion "myFunctionReset()" -->
+                            
+                            <input type="button" onclick="myFunctionAfficher()" value="Afficher"><!-- input qui va lancer la fontion "myFunctionAfficher()" -->
+                
+                            <input type="button" onclick="myFunctionConnexion()" value="Connexion"><!-- input qui va lancer la fonction "myFunctionConnexion()" -->
+
+                            <!-- <input type="button" onclick="myFunctionColor()" value"Changer la couleur"> -->
+                
+                        </form><!-- fin du formulaire -->
+                    </div><!-- fin du div formulaire -->
+                        
+                       
+                        <div id="yy"> <!-- div pour afficher la base de données -->
+                            <script> /* début du script JS */
+                                function myFunctionAfficher(){ /* début de ma fonction */
+                    
+                                    for(F=0; F<A.length; F++){
+                    
+                                        yy.appendChild(E = document.createTextNode("pseudo :" + A[F].pseudo + " / password :" + A[F].password + " / Email :" + A[F].mail + " / Status :" + A[F].stat + " / Pouvoir :" + A[F].pouvoir + " / Sexe :" + A[F].sexe));
+                    
+                                        yy.appendChild(document.createElement("br"));
+                                        
+                                        yy.appendChild(document.body.appendChild(E));}   
+                                    
+                                    yy.appendChild(document.createElement("hr"));
+                                }/* fin de ma fonction */
+                            </script><!-- fin du script -->
+                        </div><!-- fin de ma div qui affiche la base de données -->
+
+                </div> <!-- fin du div violette -->
+
+                <div class="zone_rouge"> <!-- div zone rouge -->
+                    <h3>Titre de la zone rouge</h3><!-- un titre de niveau 3 -->
+
+                    <div class="figure"> <!-- div de l'image -->
+                        <figure><!-- une figure qui contient une image et sa légende -->
+                            <img src="img/zoning.jpg" alt="maindfuck"  width="100%"><!-- une image -->
+                            <figcaption>Mise en abîme</figcaption><!-- la légende de l'image -->
+                        </figure><!-- fin de la figure -->
+                    </div> <!-- fin du div image -->
+
+                   <div class="p_de_zone_rouge"> <!-- div du text de la zone rouge -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, laborum pariatur similique ex facilis optio quos, adipisci magnam quia aliquam sunt eum hic, ab qui ullam excepturi explicabo possimus esse! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempore cumque, ab et dolorem eligendi, deleniti aut eum magnam consequuntur officiis, magni culpa repellat harum cum. Doloremque ad corporis qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nulla velit, non nam libero vero quis ut nemo, impedit ratione, culpa perspiciatis. Animi omnis sit porro vel amet quibusdam minus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora consequatur sed velit delectus deleniti. Aspernatur, ratione sunt similique, blanditiis, sequi nesciunt corporis facilis qui eius quisquam neque velit assumenda dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex culpa ipsam quam, excepturi itaque eveniet dolores blanditiis dolorem quas beatae inventore pariatur, neque tenetur distinctio doloribus recusandae maxime nisi.</p><!-- un paragraphe -->
+                    </div> <!-- fin de la div du text de la zone rouge -->
+                    <div class="clear"></div><!-- pour retourner dans le flux -->
+                </div><!-- fin du div zone rouge -->
+            </div><!-- fin du div qui contient les zones -->
+        </div><!-- fin du div container -->
+
+        <footer class="footer"> <!-- début footer -->
+            <p>Juin 2016</p><!-- un paragraphe -->
+        </footer><!-- fin footer -->
+    </div><!-- fin du div main -->
+</body>
+</html>

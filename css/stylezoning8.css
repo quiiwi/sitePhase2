@@ -1,0 +1,166 @@
+/* RESET D ERIC MEYER ----------------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0; 
+}
+/* FIN DU RESET D ERIC MEYER ------------------------------------------- */
+
+/* div principale */
+.main{
+    background: pink;/* couleur de fonds */
+}
+/* la navbar */
+.nav{
+    position: fixed;/* pour que l'élement soit fixé par rapport à l'écran */
+    height: 8%;/* hauteur */
+    width: 100%;/* largeur */
+    background: lightblue;/* couleur de fonds */
+    top: 0;/* à 0 px en partant du haut */
+    left: 0;/* à 0 px en partant du bas */
+    z-index: 2; /* définit a quelle plan la div appartient (2) */
+}
+/* la div qui contient la div contenue  */
+.container{
+    margin-top: 8%;/* la marge du haut */
+    background: #20ae96;/* couleur de fonds */
+    width: 80%;/* la largeur */
+    margin: 4% auto;/* une margin à 4% par rapport à l'écran */
+}
+/* le foooter */
+.footer{
+    position: fixed; /* position fixed = position par fixé par rapport à l'écran */
+    height: 8%; /* hauteur */
+    width: 100%; /* laugeur */
+    background: lightblue; /* couleur de fonds */
+    bottom: 0; /* se situe à 0px à partir du bas */
+    left: 0; /* se situe à 0px à partir de la gauche */
+}
+/* la div qui contient les zones */
+.contenue{
+    margin: 4% 2% 4% 2%; /* la marge */
+    background: white; /* la couleur de fonds */
+}
+/* un commentaire = un cookie */
+.zone_orange{
+    background: #e5c017;/* la couleur de fonds */
+    margin: 2%;/* la marge */
+    padding: 1%;/* la marge intérieur */
+}
+/* un commentaire = un cookie */
+.zone_violette{
+    background: #cea1f2;/* couleur de fonds */
+    margin: 2%;/* la marge */
+    padding: 1%;/* la marge intérieur */
+}
+/* un commentaire = un cookie */
+.zone_rouge{
+    background: #f31c21;/* la couleur de fonds */
+    margin: 2%;/* la marge */
+    padding: 1%;/* la marge intérieur */
+}
+/* le "logo" dans la navbar */
+.logo{
+    float: left; /* pour que l'élément "bienvenue" soit à gauche */
+}
+/* les éléments ahref dans la nav*/
+.nav_bar{
+    float: right; /* pour que les éléments "zone orange", "zone violetet", "zone rouge" soit à droite */
+}
+/* le h2 tout en haut de la page */
+h2{
+    text-align: center;/* pour centrer le text */
+    font-size: 1.7em;/* la taille du text */
+}
+/* le texte dans la zone rouge */
+.p_de_zone_rouge{
+ float: right;/* pour que le texte soit à gauche */
+ width: 50%;/* la largeur du box */
+ margin: 3%;/* la marge */
+}
+/* figure de l'image zone rouge */
+.figure{
+    display: inline-block;/* pour que l'élément soit un box inline (comportement d'un box qui va à la ligne) */
+    width: 30%;/* largeur */
+    margin: 3%;/* marge */
+}
+/* pour retourner dans le flux */
+.clear{
+    clear: both;/* retourner dans le flux */
+}
+/* tous les h3 (ils sont dans les zones orange,violette,rouge */
+h3{
+    font-size: 1.5em;/* la taille de la police */
+}
+/* la classe qui contient le logo de philharmonie */
+.logomatrix{
+    margin: 3%; /* la marge */
+    width: 35%;
+    display: inline-block;
+}
+/* la classe qui contien le formulaire */
+.formulaire{
+    float: right;/* pour que l'élement flotte à droite */
+    width: 40%; /* largeur */
+    position: relative;/* pour pouvoir déplacer la div */
+    margin-right: 10%;/* une marge à droite */
+    margin-top: 3%;/* une marge à gauche */
+    z-index: 1;/* définir le plan à la quelle il appartien (1) */
+}
+/* la classe qui contient les information sur l'utilisateur */
+#main1{
+    width: 40%;/* largeur */
+    display: inline-block;/* l'élement se coporte comme un block en ligne */
+    margin-left: 150px;/* un marge de 150px */
+}
+/* pour définir une couleur de connexion */
+#connexion{
+    color: red;/* couleur de la police : rouge */
+}
+/* modifications qui vont s'appliquer à toute la page */
+body{
+    font-family: 'Roboto Condensed', sans-serif;/* une pocile de charactère */
+}
