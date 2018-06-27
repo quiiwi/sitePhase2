@@ -53,23 +53,6 @@ table {
 #main{
     background: pink;/* couleur de fonds */
 }
-/* la navbar */
-.nav{
-    position: fixed;/* pour que l'élement soit fixé par rapport à l'écran */
-    height: 6%;/* hauteur */
-    width: 100%;/* largeur */
-    background: lightblue;/* couleur de fonds */
-    top: 0;/* à 0 px en partant du haut */
-    left: 0;/* à 0 px en partant du bas */
-    z-index: 2; /* définit a quelle plan la div appartient (2) */
-    opacity: 0.7;
-}
-/* la div qui contient la div contenue  */
-.container{
-    background: #20ae96;/* couleur de fonds */
-    width: 80%;/* la largeur */
-    margin: 2.9% auto;/* une margin à 4% par rapport à l'écran */
-}
 /* le foooter */
 .footer{
     position: fixed; /* position fixed = position par fixé par rapport à l'écran */
@@ -82,54 +65,11 @@ table {
     opacity: 0.7;
     font-size: 2em;
 }
-/* la div qui contient les zones */
-.contenue{
-    margin: 4% 2% 4% 2%; /* la marge */
-    background: white; /* la couleur de fonds */
-}
-/* un commentaire = un cookie */
-.zone_orange{
-    background: #e5c017;/* la couleur de fonds */
-    margin: 2%;/* la marge */
-    padding: 1%;/* la marge intérieur */
-}
-/* un commentaire = un cookie */
-.zone_violette{
-    background: #cea1f2;/* couleur de fonds */
-    margin: 2%;/* la marge */
-    padding: 1%;/* la marge intérieur */
-}
-/* un commentaire = un cookie */
-.zone_rouge{
-    background: #f31c21;/* la couleur de fonds */
-    margin: 2%;/* la marge */
-    padding: 1%;/* la marge intérieur */
-}
-/* le "logo" dans la navbar */
-.logo{
-    float: left; /* pour que l'élément "bienvenue" soit à gauche */
-}
-/* les éléments ahref dans la nav*/
-.nav_bar{
-    float: right; /* pour que les éléments "zone orange", "zone violetet", "zone rouge" soit à droite */
-}
 /* le h2 tout en haut de la page */
 h2{
     text-align: center;/* pour centrer le text */
     font-size: 1.7em;/* la taille du text */
     font-family: 'Anton', sans-serif;/* police de charactère pour les h2 */
-}
-/* le texte dans la zone rouge */
-.p_de_zone_rouge{
- float: right;/* pour que le texte soit à gauche */
- width: 50%;/* la largeur du box */
- margin: 3%;/* la marge */
-}
-/* figure de l'image zone rouge */
-.figure{
-    display: inline-block;/* pour que l'élément soit un box inline (comportement d'un box qui va à la ligne) */
-    width: 30%;/* largeur */
-    margin: 3%;/* marge */
 }
 /* pour retourner dans le flux */
 .clear{
@@ -146,6 +86,81 @@ h3{
     width: 35%;
     display: inline-block;
 }
+/* modifications qui vont s'appliquer à toute la page */
+body{
+    font-family: 'Roboto Condensed', sans-serif;/* une pocile de charactère */
+}
+
+
+/* ELEMENT DE LA NAV -----------------------------------
+--------------------------------------------------------
+-------------------------------------------------------- */
+
+/* les éléments ahref dans la nav*/
+.nav_bar{
+    float: right; /* pour que les éléments "zone orange", "zone violetet", "zone rouge" soit à droite */
+    font-size: 5em;
+}
+
+/* le "logo" dans la navbar */
+.logo{
+    float: left; /* pour que l'élément "bienvenue" soit à gauche */
+    height: 100%;
+    width: 0px;
+    font-size: 6.1em;
+}
+.logo a{
+    color: white;
+}
+
+/* la navbar */
+.nav{
+    position: fixed;/* pour que l'élement soit fixé par rapport à l'écran */
+    height: 100px;/* hauteur */
+    width: 100%;/* largeur */
+    background: black;/* couleur de fonds */
+    top: 0;/* à 0 px en partant du haut */
+    left: 0;/* à 0 px en partant du bas */
+    z-index: 2; /* définit a quelle plan la div appartient (2) */
+    opacity: 0.7;
+}
+
+/* la classe qui contient les information sur l'utilisateur */
+#main1{
+    
+    display: inline-block;/* l'élement se coporte comme un block en ligne */
+    margin-left: 150px;/* un marge de 150px */
+    color: lightblue;
+    
+}
+#main1 a {
+    color: white;
+}
+
+/* pour définir une couleur de connexion */
+#connexion{
+    color: red;/* couleur de la police : rouge */
+    font-size: 4em;
+}
+
+
+/* ELEMENT DU CONTAINER ---------------------------------
+---------------------------------------------------------
+--------------------------------------------------------- */
+
+/* la div qui contient la div contenue  */
+.container{
+    background: #20ae96;/* couleur de fonds */
+    width: 80%;/* la largeur */
+    margin: 100px auto;/* une margin à 4% par rapport à l'écran */
+}
+
+/* la div qui contient les zones */
+.contenue{
+    margin: 4% 2% 4% 2%; /* la marge */
+    background: white; /* la couleur de fonds */
+}
+
 /* la classe qui contien le formulaire */
 .formulaire{
     float: right;/* pour que l'élement flotte à droite */
@@ -155,17 +170,38 @@ h3{
     margin-top: 3%;/* une marge à gauche */
     z-index: 1;/* définir le plan à la quelle il appartien (1) */
 }
-/* la classe qui contient les information sur l'utilisateur */
-#main1{
-    width: 40%;/* largeur */
-    display: inline-block;/* l'élement se coporte comme un block en ligne */
-    margin-left: 150px;/* un marge de 150px */
+
+/* un commentaire = un cookie */
+.zone_orange{
+    background: #e5c017;/* la couleur de fonds */
+    margin: 2%;/* la marge */
+    padding: 1%;/* la marge intérieur */
 }
-/* pour définir une couleur de connexion */
-#connexion{
-    color: red;/* couleur de la police : rouge */
+
+/* un commentaire = un cookie */
+.zone_violette{
+    background: #cea1f2;/* couleur de fonds */
+    margin: 2%;/* la marge */
+    padding: 1%;/* la marge intérieur */
 }
-/* modifications qui vont s'appliquer à toute la page */
-body{
-    font-family: 'Roboto Condensed', sans-serif;/* une pocile de charactère */
+
+/* un commentaire = un cookie */
+.zone_rouge{
+    background: #f31c21;/* la couleur de fonds */
+    margin: 2%;/* la marge */
+    padding: 1%;/* la marge intérieur */
 }
+
+/* figure de l'image zone rouge */
+.figure{
+    display: inline-block;/* pour que l'élément soit un box inline (comportement d'un box qui va à la ligne) */
+    width: 30%;/* largeur */
+    margin: 3%;/* marge */
+}
+
+/* le texte dans la zone rouge */
+.p_de_zone_rouge{
+    float: right;/* pour que le texte soit à gauche */
+    width: 50%;/* la largeur du box */
+    margin: 3%;/* la marge */
+   }

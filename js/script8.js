@@ -1,5 +1,6 @@
 var A, B, C, D, E, F, K, R ,S ,W ,X ,Y;
 
+
 A = [
     {
         pseudo:"Quiiwi",

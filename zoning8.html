@@ -15,7 +15,7 @@
         <nav class="nav"><!-- debut nav -->
 
             <div class="logo"> <!-- debut div logo -->
-                <a href="#">bienvenue</a><!-- un lien -->
+                <a href="#"><i class="fab fa-jenkins"></i></a><!-- un lien -->
             </div><!-- fin div logo -->
 
             <div class="nav_bar"><!-- debut div nav_bar -->
@@ -95,6 +95,9 @@
                             main.style.backgroundColor = "green";
                             break;
 
+                            case "turfu":
+                            break
+
                             default:
                             alert("les couleurs disponibles sont: rouge, bleu, jaune, noir, blanc, violet, vert, orange.")
                         }
@@ -112,13 +115,13 @@
                             <label for="password">Mot de Passe:</label><!-- label du mot de passe (text affiché)-->
                             <input type="password" id="password" name="user_password" required> <br><!-- input du mot de passe -->
                         
-                            <label for="mail">Boîte Mail:</label><!-- label du mail(text affiché) -->
+                            <label for="email">Boîte Mail:</label><!-- label du mail(text affiché) -->
                             <input type="email" id="email" name="user_mail"> <br><!-- input de l'email -->
                 
-                            <label for="sexe">Homme</label><!-- label radio homme/femme -->
+                            <label for="masculin">Homme</label><!-- label radio homme/femme -->
                             <input type="radio" name="sexe" id="masculin" class="sexe" ><!-- input radio homme/femme -->
                 
-                            <label for="sexe">Femme</label><!-- label radio homme/femme -->
+                            <label for="feminin">Femme</label><!-- label radio homme/femme -->
                             <input type="radio" name="sexe" id="feminin" class="sexe" checked> <br><!-- input radio homme/femme -->
                         
                             <input type="button" onclick="myFunction()" value="Envoyer"> <!-- input qui va lancer la fonction "myFunction()" -->
