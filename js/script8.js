@@ -17,7 +17,16 @@ A = [
         stat:"Membre",
         pouvoir:"Moins que rien",
         sexe:"masculin"
+    },
+    {
+        pseudo:"Vickey",
+        password:"1111",
+        mail:"vickey@hotmail.fr",
+        stat:"Membre",
+        pouvoir:"Moins que rien",
+        sexe:"féminin"
     }
+
 ];
 
 function myFunction(){
@@ -39,17 +48,23 @@ function myFunction(){
         alert("hfhgf");
     }
 
- /*    for(a=0; a<A.length; a++){
+    var g = 0
+
+    for(a=0; a<A.length; a++){
         if(B === A[a].pseudo){
             alert("ce pseudo a déjà été choisi");
         }else if(D === A[a].mail){
             alert("cet email a déjà été choisi");
-        }else {}
-    }  */
+        }else { 
+           ; g++ ; console.log(g)}
+        } 
+        if (g == A.length){
+            A.push({"pseudo":B, "password":C, "mail":D, "stat":K, "pouvoir":Q, "sexe":R});
+        }
     
 
 
-      A.push({"pseudo":B, "password":C, "mail":D, "stat":K, "pouvoir":Q, "sexe":R});  
+      /* A.push({"pseudo":B, "password":C, "mail":D, "stat":K, "pouvoir":Q, "sexe":R});   */
 
     console.log(A);
     console.log("email : " + D);

@@ -107,16 +107,16 @@
 
 
                     <div class="formulaire"> <!-- div du formulaire -->
-                        <form action="js/script8.js" id="donnees" name="formulaire" method="POST"> <!-- formulaire -->
+                        <form action="#" id="donnees" name="formulaire"> <!-- formulaire -->
                     
                             <label for="pseudo">Pseudo:</label><!-- label du pseudo (text affiché)-->
-                            <input type="text" id="pseudo" name="user_name" required value="yolo"> <br><!-- input du pseudo -->
+                            <input type="text" id="pseudo" name="user_name" placeholder="Votre pseudo" required><br><!-- input du pseudo -->
                             
                             <label for="password">Mot de Passe:</label><!-- label du mot de passe (text affiché)-->
-                            <input type="password" id="password" name="user_password" required> <br><!-- input du mot de passe -->
+                            <input type="password" id="password" name="user_password" placeholder="Votre mot de passe" required> <br><!-- input du mot de passe -->
                         
                             <label for="email">Boîte Mail:</label><!-- label du mail(text affiché) -->
-                            <input type="email" id="email" name="user_mail"> <br><!-- input de l'email -->
+                            <input type="email" id="email" name="user_mail" placeholder="Votre Email" required> <br><!-- input de l'email -->
                 
                             <label for="masculin">Homme</label><!-- label radio homme/femme -->
                             <input type="radio" name="sexe" id="masculin" class="sexe" ><!-- input radio homme/femme -->
@@ -126,7 +126,7 @@
                         
                             <input type="button" onclick="myFunction()" value="Envoyer"> <!-- input qui va lancer la fonction "myFunction()" -->
                     
-                            <input type="button" onclick="myFunctionReset()" value="Annuler"> <!-- input qui va lancer la fontion "myFunctionReset()" -->
+                            <input type="reset" onclick="myFunctionReset()" value="Annuler"> <!-- input qui va lancer la fontion "myFunctionReset()" -->
                             
                             <input type="button" onclick="myFunctionAfficher()" value="Afficher"><!-- input qui va lancer la fontion "myFunctionAfficher()" -->
                 
